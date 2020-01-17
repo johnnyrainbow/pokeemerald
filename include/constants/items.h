@@ -4,10 +4,10 @@
 #define ITEM_NONE 0
 
 // Balls
-#define ITEM_MASTER_BALL 1
+#define ITEM_MASTER_BALL 4
 #define ITEM_ULTRA_BALL 2
 #define ITEM_GREAT_BALL 3
-#define ITEM_POKE_BALL 4
+#define ITEM_POKE_BALL 1
 #define ITEM_SAFARI_BALL 5
 #define ITEM_NET_BALL 6
 #define ITEM_DIVE_BALL 7

@@ -55,15 +55,15 @@ const struct Item gItems[] =
 
     [ITEM_POKE_BALL] =
     {
-        .name = _("POKé BALL"),
-        .itemId = ITEM_POKE_BALL,
-        .price = 200,
-        .description = sPokeBallDesc,
+        .name = _("MASTER BALL"),
+        .itemId = ITEM_MASTER_BALL,
+        .price = 2000,
+        .description = sMasterBallDesc,
         .pocket = POCKET_POKE_BALLS,
-        .type = 3,
+        .type = 0,
         .battleUsage = 2,
         .battleUseFunc = ItemUseInBattle_PokeBall,
-        .secondaryId = 3,
+        .secondaryId = 0,
     },
 
     [ITEM_SAFARI_BALL] =
