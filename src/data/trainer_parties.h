@@ -4428,8 +4428,8 @@ static const struct TrainerMonItemCustomMoves sParty_Wallace[] = {
     },
     {
     .iv = 255,
-    .lvl = 56,
-    .species = SPECIES_LUDICOLO,
+    .lvl = 65,
+    .species = SPECIES_MEWTWO,
     .heldItem = ITEM_NONE,
     .moves = MOVE_GIGA_DRAIN, MOVE_SURF, MOVE_LEECH_SEED, MOVE_DOUBLE_TEAM
     },
@@ -4449,10 +4449,10 @@ static const struct TrainerMonItemCustomMoves sParty_Wallace[] = {
     },
     {
     .iv = 255,
-    .lvl = 58,
-    .species = SPECIES_MILOTIC,
-    .heldItem = ITEM_SITRUS_BERRY,
-    .moves = MOVE_RECOVER, MOVE_SURF, MOVE_ICE_BEAM, MOVE_TOXIC
+    .lvl = 80,
+    .species = SPECIES_GARDEVOIR,
+    .heldItem = ITEM_FOCUS_BAND,
+    .moves = MOVE_SHEER_COLD, MOVE_FISSURE, MOVE_HORN_DRILL, MOVE_GUILLOTINE
     }
 };
 
