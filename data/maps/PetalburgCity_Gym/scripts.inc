@@ -1245,23 +1245,23 @@ PetalburgCity_Gym_EventScript_GymStatue:: @ 8205798
 
 PetalburgCity_Gym_Text_DadYoureHereWithYourPokemon: @ 82057A2
 	.string "DAD: Hm?\p"
-	.string "Well, if it isn't {PLAYER}!\n"
+	.string "Well, if it isn't {PLAYER}.. leave.\n"
 	.string "So you're all finished moving in?\p"
 	.string "I'm surprised that you managed to\n"
 	.string "get here by yourself.\p"
 	.string "Oh, I see.\n"
 	.string "You're with your POKéMON.\p"
-	.string "Hm… Then I guess you're going to\n"
-	.string "become a TRAINER like me, {PLAYER}.\p"
-	.string "That's great news!\n"
-	.string "I'll be looking forward to it!$"
+	.string "I knew you weren't smart enough\n"
+	.string "to find your way here by yourself, {PLAYER}.\p"
+	.string "You fucking donkey!\n"
+	.string "I'll be looking forward to crushing you later!$"
 
 PetalburgCity_Gym_Text_WallyIdLikeAPokemon: @ 82058B1
 	.string "Um… I…\n"
 	.string "I'd like to get a POKéMON, please…$"
 
 PetalburgCity_Gym_Text_DadOhYoureWallyRight: @ 82058DB
-	.string "DAD: Hm? You're… Uh… Oh, right.\n"
+	.string "DAD: Hm? Who the fuck is this kid??\n"
 	.string "You're WALLY, right?$"
 
 PetalburgCity_Gym_Text_WallyIveNeverCaughtAPokemon: @ 8205910
@@ -1273,24 +1273,24 @@ PetalburgCity_Gym_Text_WallyIveNeverCaughtAPokemon: @ 8205910
 	.string "I don't know how…$"
 
 PetalburgCity_Gym_Text_DadHmISee: @ 82059D8
-	.string "DAD: Hm. I see.$"
+	.string "DAD: Fuck off amateur$"
 
 PetalburgCity_Gym_Text_DadPlayerGoWithWally: @ 82059E8
 	.string "DAD: {PLAYER}, you heard that,\n"
 	.string "right?\p"
 	.string "Go with WALLY and make sure that he\n"
-	.string "safely catches a POKéMON.$"
+	.string "doesn't get eaten.$"
 
 PetalburgCity_Gym_Text_IllLoanYouMyZigzagoon: @ 8205A46
 	.string "WALLY, here, I'll loan you my POKéMON.\p"
-	.string "WALLY received a ZIGZAGOON!$"
+	.string "I stole it just for you.$"
 
 PetalburgCity_Gym_Text_WallyThankYouAndDadGivesPokeBall: @ 8205A89
 	.string "WALLY: Oh, wow!\n"
 	.string "A POKéMON!\p"
-	.string "DAD: Hm. I'll give you a POKé BALL, too.\n"
+	.string "DAD: Hm. I'll give you a BEATING too.\n"
 	.string "Go for it!\p"
-	.string "WALLY received a POKé BALL!$"
+	.string "WALLY received a BEATING!$"
 
 PetalburgCity_Gym_Text_WallyOhWowThankYou: @ 8205AF4
 	.string "WALLY: Oh, wow!\n"
