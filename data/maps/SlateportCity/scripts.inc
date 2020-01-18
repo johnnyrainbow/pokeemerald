@@ -1198,8 +1198,8 @@ SlateportCity_Text_OhPlayerWeMadeDiscovery: @ 81DE64F
 SlateportCity_Text_AquaWillAssumeControlOfSubmarine: @ 81DE724
 	.string "Fufufu…\n"
 	.string "CAPT. STERN, I presume.\p"
-	.string "We of TEAM AQUA will assume\n"
-	.string "control of your submarine!\p"
+	.string "We have taken your wife hostage\n"
+	.string "and your submarine and shit.\p"
 	.string "Your objections are meaningless!\n"
 	.string "We expect your total cooperation!\p"
 	.string "Fufufu…\n"
@@ -1213,9 +1213,9 @@ SlateportCity_Text_SternWhatWasAllThat: @ 81DE7F7
 	.string "Where did it come from?$"
 
 SlateportCity_Text_FromHarborTryingToTakeSub: @ 81DE860
-	.string "It's from the HARBOR!\p"
-	.string "The submarine!\n"
-	.string "They're trying to take it!$"
+	.string "It's from the BROTHEL!\p"
+	.string "The ladies of the night!\n"
+	.string "They're trying to take them!$"
 
 SlateportCity_Text_PleaseComeWithMe: @ 81DE8A0
 	.string "{PLAYER}{KUN}!\n"

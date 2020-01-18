@@ -550,7 +550,7 @@ MossdeepCity_Gym_Text_NicholasPostBattle: @ 822173A
 
 MossdeepCity_Gym_Text_TateAndLizaPreBattle: @ 8221783
 	.string "TATE: Hehehe… Were you surprised?\p"
-	.string "LIZA: Fufufu… Were you surprised?\p"
+	.string "LIZA: WELL??? ANSWER ME YOU MUTE FUCKER\p"
 	.string "TATE: That there are two GYM LEADERS?\n"
 	.string "LIZA: That there are two GYM LEADERS?\p"
 	.string "TATE: We're twins!\n"
@@ -560,7 +560,7 @@ MossdeepCity_Gym_Text_TateAndLizaPreBattle: @ 8221783
 	.string "TATE: The other is thinking…\n"
 	.string "LIZA: All in our minds!\p"
 	.string "TATE: This combination of ours…\n"
-	.string "LIZA: Can you beat it?$"
+	.string "LIZA: PREPARE TO GET WRECKED$"
 
 MossdeepCity_Gym_Text_TateAndLizaDefeat: @ 82218EC
 	.string "TATE: What?! Our combination…\n"

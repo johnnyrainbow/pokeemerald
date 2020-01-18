@@ -510,7 +510,7 @@ MtPyre_Summit_Text_ArchieWeGotTheOrbLetsGo: @ 823281A
 	.string "Fufufu… Now we can bring our ultimate\n"
 	.string "objective to fruition!\p"
 	.string "Okay, TEAM!\n"
-	.string "We're pulling out!$"
+	.string "We're pulling out! (thats what she said)$"
 
 MtPyre_Summit_Text_BothOrbsTakenMagmaLeftThis: @ 823290E
 	.string "Oh, no…\n"

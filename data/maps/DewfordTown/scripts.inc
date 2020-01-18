@@ -689,16 +689,16 @@ DewfordTown_Text_WhereAreWeBound: @ 81E9C8A
 DewfordTown_Text_PetalburgWereSettingSail: @ 81E9CE5
 	.string "MR. BRINEY: PETALBURG, is it?\p"
 	.string "Anchors aweigh!\n"
-	.string "PEEKO, we're setting sail, my darling!$"
+	.string "I'VE KILLED THOUSANDS$"
 
 DewfordTown_Text_SlateportWereSettingSail: @ 81E9D3A
 	.string "MR. BRINEY: SLATEPORT, is it?\p"
 	.string "Anchors aweigh!\n"
-	.string "PEEKO, we're setting sail, my darling!$"
+	.string "I'LL EAT YOUR ENTIRE FAMILY$"
 
 DewfordTown_Text_JustTellMeWhenYouNeedToSetSail: @ 81E9D8F
 	.string "MR. BRINEY: You just tell me whenever\n"
-	.string "you need to set sail again!$"
+	.string "you want me to abduct you again$"
 
 DewfordTown_Text_GettingItchToFish: @ 81E9DD1
 	.string "This is a renowned fishing spot.\n"
