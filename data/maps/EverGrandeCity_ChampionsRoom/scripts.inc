@@ -226,13 +226,13 @@ EverGrandeCity_ChampionsRoom_Movement_BirchArrives: @ 8228C43
 	step_end
 
 EverGrandeCity_ChampionsRoom_Text_PreBattleSpeech: @ 8228C4C
-	.string "WALLACE: Welcome, {PLAYER}{KUN}.\p"
+	.string "WALLACE: Whats up shit face.\p"
 	.string "That incident in SOOTOPOLIS CITY…\n"
 	.string "That was superb work, putting an end\l"
 	.string "to that crisis all by yourself.\p"
 	.string "Oops!\p"
-	.string "It wouldn't be fair to say that you\n"
-	.string "alone ended the crisis.\p"
+	.string "Just fucking joking, prepare to get wrecked.\n"
+	.string "Nerd.\p"
 	.string "You overcame that difficult situation\n"
 	.string "by working as one with your POKéMON.\p"
 	.string "We TRAINERS raise POKéMON by giving\n"
@@ -246,10 +246,10 @@ EverGrandeCity_ChampionsRoom_Text_PreBattleSpeech: @ 8228C4C
 	.string "Now!\p"
 	.string "Who can most elegantly dance with\n"
 	.string "their POKéMON in HOENN?\p"
-	.string "Show me right here and now!$"
+	.string "I'm GONNA SHOVE MY GARDEVOIR DOWN UR THROAT!$"
 
 EverGrandeCity_ChampionsRoom_Text_Defeat: @ 8228EAC
-	.string "I, the CHAMPION, fall in defeat…\p"
+	.string "FUCK U\p"
 	.string "That was wonderful work.\n"
 	.string "You were elegant, infuriatingly so.\l"
 	.string "And yet it was utterly glorious!\p"

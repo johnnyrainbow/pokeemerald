@@ -60,12 +60,12 @@ CaveOfOrigin_B1F_EventScript_AtSkyPillar:: @ 823584D
 	end
 
 CaveOfOrigin_B1F_Text_WallaceStory: @ 823586E
-	.string "Ah, so you are {PLAYER}{KUN}?\n"
+	.string "Ah, so you are that fucking cloud child?\n"
 	.string "I've heard tales of your exploits.\p"
 	.string "My name is WALLACE.\p"
 	.string "I was once the GYM LEADER of\n"
 	.string "SOOTOPOLIS, but something came up.\p"
-	.string "So now, I've entrusted my mentor JUAN\n"
+	.string "So now, I've entrusted my mentor JUANITO\n"
 	.string "with the GYM's operation.\p"
 	.string "… … … … … …\n"
 	.string "… … … … … …\p"
