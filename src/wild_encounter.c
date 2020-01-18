@@ -395,14 +395,22 @@ enum
 #define WILD_CHECK_REPEL 0x1
 #define WILD_CHECK_KEEN_EYE 0x2
 
+static int randInRange(int min, int max)
+{
+  return (Random() % (max + 1 - min)) + min;
+}
+
 static bool8 TryGenerateWildMon(const struct WildPokemonInfo *wildMonInfo, u8 area, u8 flags)
 {
     u8 wildMonIndex = 0;
     u8 level;
-    u8 min = 1;
-    int max = 439;
+    int kant_min = 1;
+    int kant_max = 251;
+    int hoen_min = 277;
+    int hoen_max = 411;
     int random_int;
-
+    int dex_decider;
+    int min, max;
     switch (area)
     {
     case WILD_AREA_LAND:
@@ -430,9 +438,17 @@ static bool8 TryGenerateWildMon(const struct WildPokemonInfo *wildMonInfo, u8 ar
     if (gMapHeader.mapLayoutId != LAYOUT_BATTLE_FRONTIER_BATTLE_PIKE_ROOM_WILD_MONS && flags & WILD_CHECK_KEEN_EYE && !IsAbilityAllowingEncounter(level))
         return FALSE;
     //GAB DO IT HERE
-
-    random_int = (Random() % (max+1 - min)) + min;
-
+    dex_decider = randInRange(0,1);
+ 
+    if(dex_decider == 0) {
+        min = hoen_min;
+        max = hoen_max;
+    } else {
+        min = kant_min;
+        max = kant_max;
+    }
+    random_int = randInRange(min,max);
+   
     CreateWildMon(random_int, level);
     return TRUE;
 }
