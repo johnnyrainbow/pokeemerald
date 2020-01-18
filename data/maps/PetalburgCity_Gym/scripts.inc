@@ -1359,7 +1359,7 @@ PetalburgCity_Gym_Text_YouHaveGottenStronger: @ 8205F87
 	.string "that you've earned.$"
 
 PetalburgCity_Gym_Text_NormanPreBattle: @ 8205FE5
-	.string "DAD: Hm…\n"
+	.string "DAD: Aw shit its you again\n"
 	.string "So, you did get four GYM BADGES.\p"
 	.string "Fine, as I promised, we will have\n"
 	.string "a POKéMON battle.\p"
@@ -1377,8 +1377,8 @@ PetalburgCity_Gym_Text_NormanDefeat: @ 8206107
 	.string "I… I can't…\p"
 	.string "I can't believe it. {PLAYER}…\p"
 	.string "I lost to {PLAYER}?\p"
-	.string "But, rules are rules!\n"
-	.string "Here, take this.$"
+	.string "I never loved you.\n"
+	.string "Take this and leave you thief of joy.$"
 
 PetalburgCity_Gym_Text_ReceivedBalanceBadge: @ 8206162
 	.string "{PLAYER} received the BALANCE BADGE\n"
@@ -1389,8 +1389,8 @@ PetalburgCity_Gym_Text_ExplainBalanceBadgeTakeThis: @ 820618A
 	.string "of all your POKéMON will increase.\p"
 	.string "POKéMON that know the HM move SURF\n"
 	.string "will be able to travel over water.\p"
-	.string "This is my gift to you. {PLAYER}, I'm\n"
-	.string "sure you can use it correctly.$"
+	.string "This is my gift to you. {PLAYER}, take it\n"
+	.string "and leave.$"
 
 PetalburgCity_Gym_Text_ExplainFacade: @ 8206254
 	.string "DAD: TM42 contains FACADE.\p"
