@@ -126,9 +126,9 @@ static const u8 sStarterLabelCoords[][2] =
 
 static const u16 sStarterMon[STARTER_MON_COUNT] =
 {
-    SPECIES_GROUDON,
-    SPECIES_KYOGRE,
-    SPECIES_RAYQUAZA,
+   SPECIES_FLAREON,
+    SPECIES_VAPOREON,
+    SPECIES_JOLTEON,
 };
 
 static const struct BgTemplate gUnknown_085B1E00[3] =
