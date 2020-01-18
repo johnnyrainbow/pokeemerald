@@ -400,17 +400,27 @@ static int randInRange(int min, int max)
   return (Random() % (max + 1 - min)) + min;
 }
 
+static int getRandomPokemon() {
+   int kant_min = 1;
+    int kant_max = 251;
+    int hoen_min = 277;
+    int hoen_max = 411;
+    int dex_decider = randInRange(0,1);
+    int min, max;
+      if(dex_decider == 0) {
+        min = hoen_min;
+        max = hoen_max;
+    } else {
+        min = kant_min;
+        max = kant_max;
+    }
+    return randInRange(min,max);
+}
 static bool8 TryGenerateWildMon(const struct WildPokemonInfo *wildMonInfo, u8 area, u8 flags)
 {
     u8 wildMonIndex = 0;
     u8 level;
-    int kant_min = 1;
-    int kant_max = 251;
-    int hoen_min = 277;
-    int hoen_max = 411;
-    int random_int;
-    int dex_decider;
-    int min, max;
+  
     switch (area)
     {
     case WILD_AREA_LAND:
@@ -437,19 +447,9 @@ static bool8 TryGenerateWildMon(const struct WildPokemonInfo *wildMonInfo, u8 ar
         return FALSE;
     if (gMapHeader.mapLayoutId != LAYOUT_BATTLE_FRONTIER_BATTLE_PIKE_ROOM_WILD_MONS && flags & WILD_CHECK_KEEN_EYE && !IsAbilityAllowingEncounter(level))
         return FALSE;
-    //GAB DO IT HERE
-    dex_decider = randInRange(0,1);
- 
-    if(dex_decider == 0) {
-        min = hoen_min;
-        max = hoen_max;
-    } else {
-        min = kant_min;
-        max = kant_max;
-    }
-    random_int = randInRange(min,max);
+
    
-    CreateWildMon(random_int, level);
+    CreateWildMon(getRandomPokemon(), level);
     return TRUE;
 }
 
