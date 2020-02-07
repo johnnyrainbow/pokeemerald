@@ -467,27 +467,27 @@ MauvilleCity_EventScript_RegisterWallyCall:: @ 81DF7BA
 	end
 
 MauvilleCity_Text_UncleHesTooPeppy: @ 81DF7DC
-	.string "UNCLE: It's because of POKéMON that\n"
-	.string "this boy's got more pep, I suppose…\l"
-	.string "But he's become a bit too peppy…$"
+	.string "UNCLE: It's because of his stupid GARDEVOIR that\n"
+	.string "this boy's got more 'pep', I suppose…\l"
+	.string "But he's become a bit too 'peppy…' if you know what i mean, could you murder his GARDEVOIR to make it stop?$"
 
 MauvilleCity_Text_WallyWantToChallengeGym: @ 81DF845
-	.string "WALLY: Aww, UNCLE, please?\p"
-	.string "I want to challenge this GYM and see\n"
-	.string "how much better I've become.\p"
-	.string "Please? May I, please?$"
+	.string "WALLY: Shut the fuck up\p"
+	.string "I do what i fucking want\n"
+	.string "no one can stop true love.\p"
+	.string "I will stop at nothing to be togther forever$"
 
 MauvilleCity_Text_UncleYourePushingIt: @ 81DF8B9
 	.string "UNCLE: Now hold on, WALLY.\p"
-	.string "Since you started living with POKéMON,\n"
-	.string "you have grown quite a lot stronger.\p"
+	.string "Since you started living with GARDEVOIR,\n"
+	.string "you have grown quite a lot hornier.\p"
 	.string "But don't you think you're pushing it\n"
-	.string "to suddenly challenge a GYM?$"
+	.string "to move in together?$"
 
 MauvilleCity_Text_WallyWeCanBeatAnyone: @ 81DF963
-	.string "WALLY: I'm not pushing it.\p"
-	.string "If I combine forces with RALTS,\n"
-	.string "we can beat anyone!$"
+	.string "WALLY: Eat shit UNCLE, you just want to tap that Gardvoir ass.\p"
+	.string "If join my soul with my sexy GARDEVOIR,\n"
+	.string "we can make anyone jealous!$"
 
 MauvilleCity_Text_WallyWillYouBattleMe: @ 81DF9B2
 	.string "WALLY: Oh! Hi, {PLAYER}!\p"

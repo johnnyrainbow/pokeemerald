@@ -264,9 +264,9 @@ Route101_Text_HelpMe: @ 81EBE8F
 
 Route101_Text_PleaseHelp: @ 81EBE9A
 	.string "Hello! You over there!\n"
-	.string "Please! Help!\p"
-	.string "In my BAG!\n"
-	.string "There's a POKé BALL!$"
+	.string "Please! Help! What the fuck are you waiting for?!?!?\p"
+	.string "WHERE"S THE LAMB SAUCE?? In my BAG???!\n"
+	.string "There's a POKé BALL!, maybe, i dunno$"
 
 Route101_Text_DontLeaveMe: @ 81EBEDF
 	.string "Wh-Where are you going?!\n"
@@ -274,14 +274,14 @@ Route101_Text_DontLeaveMe: @ 81EBEDF
 
 Route101_Text_YouSavedMe: @ 81EBF12
 	.string "PROF. BIRCH: Whew…\p"
-	.string "I was in the tall grass studying wild\n"
-	.string "POKéMON when I was jumped.\p"
-	.string "You saved me.\n"
-	.string "Thanks a lot!\p"
+	.string "I was in the tall grass smoking a Cuban cigar\n"
+	.string "when I was jumped by the police.\p"
+	.string "You saved me, you digsusting prick.\n"
+	.string "Thanks a lot, jackass!\p"
 	.string "Oh?\p"
 	.string "Hi, you're {PLAYER}{KUN}!\p"
-	.string "This is not the place to chat, so come\n"
-	.string "by my POKéMON LAB later, okay?$"
+	.string "This is not the place to chat, theyre always watching, so come\n"
+	.string "by my SECRET LAIR later, okay?$"
 
 Route101_Text_TakeTiredPokemonToPokeCenter: @ 81EBFDD
 	.string "If POKéMON get tired, take them to\n"

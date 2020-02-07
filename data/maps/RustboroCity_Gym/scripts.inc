@@ -188,19 +188,19 @@ RustboroCity_Gym_Text_RoxannePreBattle: @ 821362A
 	.string "battle, and with which POKéMON?$"
 
 RustboroCity_Gym_Text_RoxanneDefeat: @ 821370B
-	.string "So…\n"
+	.string "You fucking wanker\n"
 	.string "I lost…\p"
-	.string "It seems that I still have much more\n"
-	.string "to learn…\p"
-	.string "I understand.\p"
+	.string "It seems that I still have no talent\n"
+	.string "If you dont leave now\p"
+	.string "I'm calling the police.\p"
 	.string "The POKéMON LEAGUE's rules state\n"
-	.string "that TRAINERS are to be given this\l"
-	.string "if they defeat a GYM LEADER.\p"
-	.string "Please accept the official POKéMON\n"
-	.string "LEAGUE STONE BADGE.$"
+	.string "that i cannot give you a Gym badge\l"
+	.string "unless you murder your firstborn POKEMON.\p"
+	.string "Please go die\n"
+	.string "The thing I'm about to give you is Teeming with CORONAVIRUS.$"
 
 RustboroCity_Gym_Text_ReceivedStoneBadge: @ 82137EC
-	.string "{PLAYER} received the STONE BADGE\n"
+	.string "{PLAYER} received the infected STONE BADGE\n"
 	.string "from ROXANNE.$"
 
 RustboroCity_Gym_Text_StoneBadgeInfoTakeThis: @ 8213816
