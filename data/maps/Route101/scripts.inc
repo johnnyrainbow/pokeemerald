@@ -265,7 +265,7 @@ Route101_Text_HelpMe: @ 81EBE8F
 Route101_Text_PleaseHelp: @ 81EBE9A
 	.string "Hello! You over there!\n"
 	.string "Please! Help! What the fuck are you waiting for?!?!?\p"
-	.string "WHERE"S THE LAMB SAUCE?? In my BAG???!\n"
+	.string "WHERES THE LAMB SAUCE?? In my BAG???!\n"
 	.string "There's a POKé BALL!, maybe, i dunno$"
 
 Route101_Text_DontLeaveMe: @ 81EBEDF
