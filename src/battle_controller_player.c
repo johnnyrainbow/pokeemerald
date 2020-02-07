@@ -2713,8 +2713,8 @@ static int getGandreMaxLevel(void)
           count++;
         }
     }
-
-    return 15 + count*15;
+    if(count == 8) return 55;
+    return 14 + count*7;
 }
 
 static void PlayerHandleExpUpdate(void)

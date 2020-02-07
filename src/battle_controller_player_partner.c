@@ -1598,9 +1598,10 @@ static int getGandreMaxLevel(void)
           count++;
         }
     }
-
-    return 15 + count*15;
+    if(count == 8) return 55;
+    return 14 + count*7;
 }
+
 static void PlayerPartnerHandleExpUpdate(void)
 {
     u8 monId = gBattleBufferA[gActiveBattler][1];
