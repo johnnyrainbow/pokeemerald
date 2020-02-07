@@ -53,6 +53,8 @@
 #include "constants/rgb.h"
 #include "data.h"
 #include "constants/party_menu.h"
+#include "constants/flags.h"
+
 
 extern struct MusicPlayerInfo gMPlayInfo_BGM;
 
@@ -3228,7 +3230,19 @@ static const u16 sBadgeFlags[8] =
     FLAG_BADGE05_GET, FLAG_BADGE06_GET, FLAG_BADGE07_GET, FLAG_BADGE08_GET,
 };
 
-
+static int getGandreXp(void)
+{
+    s32 i, count;
+    count = 0;
+    for (i = 0; i < ARRAY_COUNT(sBadgeFlags); i++)
+    {
+        if (FlagGet(sBadgeFlags[i]) == TRUE)
+        {
+          count++;
+        }
+    }
+    return 1 + count*0.06;
+}
 static void Cmd_getexp(void)
 {
     u16 item;
@@ -3284,7 +3298,7 @@ static void Cmd_getexp(void)
                     viaExpShare++;
             }
 
-            calculatedExp = (gBaseStats[gBattleMons[gBattlerFainted].species].expYield * gBattleMons[gBattlerFainted].level / 7) * 100.5;
+            calculatedExp = (gBaseStats[gBattleMons[gBattlerFainted].species].expYield * gBattleMons[gBattlerFainted].level / 7) * getGandreXp() ;
 
             if (viaExpShare) // at least one mon is getting exp via exp share
             {
