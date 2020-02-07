@@ -2706,15 +2706,15 @@ static int getGandreMaxLevel(void)
 {
     s32 i, count;
     count = 0;
-    for (i = 0; i < ARRAY_COUNT(sBadgeFlags); i++)
+    for (i = 0; i < (size_t)(sizeof(sBadgeFlags) / sizeof((sBadgeFlags)[0])); i++)
     {
-        if (FlagGet(sBadgeFlags[i]) == TRUE)
+        if (FlagGet(sBadgeFlags[i]) == 1)
         {
           count++;
         }
     }
     if(count == 8) return 55;
-    return 14 + count*7;
+    return 14 + count*5;
 }
 
 static void PlayerHandleExpUpdate(void)
