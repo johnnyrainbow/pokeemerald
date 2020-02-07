@@ -1,13 +1,13 @@
 gText_Birch_Welcome:: @ 82C897B
 	.string "Hi! Sorry to keep you waiting!\p"
-	.string "Welcome to the world of POKéMON!\p"
+	.string "Welcome to my SEX DUNGEON\p"
 	.string "My name is BIRCH.\p"
-	.string "But everyone calls me the POKéMON\n"
-	.string "PROFESSOR.\p"
+	.string "But everyone calls me\n"
+	.string "DADDY.\p"
 	.string "$"
 
 gText_Birch_Pokemon:: @ 82C89FB
-	.string "This is what we call a “POKéMON.”\p"
+	.string "This is what we call a TERRIBLE MISTAKE.”\p"
 	.string "\n"
 	.string "$"
 
