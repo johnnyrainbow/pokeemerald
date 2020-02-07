@@ -35,6 +35,8 @@
 #include "constants/songs.h"
 #include "constants/trainers.h"
 #include "constants/rgb.h"
+#include "constants/flags.h"
+#include "event_data.h"
 
 extern struct MusicPlayerInfo gMPlayInfo_BGM;
 
@@ -1150,7 +1152,6 @@ static void Task_GiveExpToMon(u8 taskId)
         if (currExp + gainedExp >= nextLvlExp)
         {
             u8 savedActiveBattler;
-
             SetMonData(mon, MON_DATA_EXP, &nextLvlExp);
             CalculateMonStats(mon);
             gainedExp -= nextLvlExp - currExp;
@@ -2696,12 +2697,34 @@ static void PlayerHandleHealthBarUpdate(void)
 
     gBattlerControllerFuncs[gActiveBattler] = CompleteOnHealthbarDone;
 }
+static const u16 sBadgeFlags[8] =
+{
+    FLAG_BADGE01_GET, FLAG_BADGE02_GET, FLAG_BADGE03_GET, FLAG_BADGE04_GET,
+    FLAG_BADGE05_GET, FLAG_BADGE06_GET, FLAG_BADGE07_GET, FLAG_BADGE08_GET,
+};
+static int getGandreMaxLevel(void)
+{
+    s32 i, count;
+    count = 0;
+    for (i = 0; i < ARRAY_COUNT(sBadgeFlags); i++)
+    {
+        if (FlagGet(sBadgeFlags[i]) == TRUE)
+        {
+          count++;
+        }
+    }
+
+    return 15 + count*15;
+}
 
 static void PlayerHandleExpUpdate(void)
 {
     u8 monId = gBattleBufferA[gActiveBattler][1];
 
     if (GetMonData(&gPlayerParty[monId], MON_DATA_LEVEL) >= MAX_LEVEL)
+    {
+        PlayerBufferExecCompleted();
+    } else if (GetMonData(&gPlayerParty[monId], MON_DATA_LEVEL) >= getGandreMaxLevel())
     {
         PlayerBufferExecCompleted();
     }

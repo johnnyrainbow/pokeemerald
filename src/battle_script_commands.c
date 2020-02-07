@@ -3227,21 +3227,7 @@ static const u16 sBadgeFlags[8] =
     FLAG_BADGE01_GET, FLAG_BADGE02_GET, FLAG_BADGE03_GET, FLAG_BADGE04_GET,
     FLAG_BADGE05_GET, FLAG_BADGE06_GET, FLAG_BADGE07_GET, FLAG_BADGE08_GET,
 };
-static int getBadgeCount(void)
-{
-    int counter = 0;
-    s32 i, count;
 
-    for (count = 0, i = 0; i < ARRAY_COUNT(sBadgeFlags); i++)
-    {
-        if (FlagGet(sBadgeFlags[i]) == TRUE)
-        {
-            counter++;
-        }
-    }
-
-    return counter;
-}
 
 static void Cmd_getexp(void)
 {
@@ -3298,7 +3284,7 @@ static void Cmd_getexp(void)
                     viaExpShare++;
             }
 
-            calculatedExp = (gBaseStats[gBattleMons[gBattlerFainted].species].expYield * gBattleMons[gBattlerFainted].level / 7) * (0.6 + getBadgeCount()/8); 
+            calculatedExp = (gBaseStats[gBattleMons[gBattlerFainted].species].expYield * gBattleMons[gBattlerFainted].level / 7) * 100.5;
 
             if (viaExpShare) // at least one mon is getting exp via exp share
             {

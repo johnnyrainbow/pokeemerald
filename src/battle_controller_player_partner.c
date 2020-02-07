@@ -26,7 +26,8 @@
 #include "constants/battle_anim.h"
 #include "constants/songs.h"
 #include "constants/trainers.h"
-
+#include "constants/flags.h"
+#include "event_data.h"
 // this file's functions
 static void PlayerPartnerHandleGetMonData(void);
 static void PlayerPartnerHandleGetRawMonData(void);
@@ -1581,12 +1582,33 @@ static void PlayerPartnerHandleHealthBarUpdate(void)
 
     gBattlerControllerFuncs[gActiveBattler] = CompleteOnHealthbarDone;
 }
+static const u16 sBadgeFlags[8] =
+{
+    FLAG_BADGE01_GET, FLAG_BADGE02_GET, FLAG_BADGE03_GET, FLAG_BADGE04_GET,
+    FLAG_BADGE05_GET, FLAG_BADGE06_GET, FLAG_BADGE07_GET, FLAG_BADGE08_GET,
+};
+static int getGandreMaxLevel(void)
+{
+    s32 i, count;
+    count = 0;
+    for (i = 0; i < ARRAY_COUNT(sBadgeFlags); i++)
+    {
+        if (FlagGet(sBadgeFlags[i]) == TRUE)
+        {
+          count++;
+        }
+    }
 
+    return 15 + count*15;
+}
 static void PlayerPartnerHandleExpUpdate(void)
 {
     u8 monId = gBattleBufferA[gActiveBattler][1];
 
     if (GetMonData(&gPlayerParty[monId], MON_DATA_LEVEL) >= MAX_LEVEL)
+    {
+        PlayerPartnerBufferExecCompleted();
+    } else if (GetMonData(&gPlayerParty[monId], MON_DATA_LEVEL) >= getGandreMaxLevel())
     {
         PlayerPartnerBufferExecCompleted();
     }
@@ -1598,6 +1620,7 @@ static void PlayerPartnerHandleExpUpdate(void)
         LoadBattleBarGfx(1);
         GetMonData(&gPlayerParty[monId], MON_DATA_SPECIES);  // unused return value
         expPointsToGive = gBattleBufferA[gActiveBattler][2] | (gBattleBufferA[gActiveBattler][3] << 8);
+
         taskId = CreateTask(Task_GiveExpToMon, 10);
         gTasks[taskId].tExpTask_monId = monId;
         gTasks[taskId].tExpTask_gainedExp = expPointsToGive;
