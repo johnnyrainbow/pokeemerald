@@ -84,7 +84,7 @@
 #define NUM_BATTLE_STATS 8
 
 // Shiny odds
-#define SHINY_ODDS 2000 // Actual probability is SHINY_ODDS/65536
+#define SHINY_ODDS 8000 // Actual probability is SHINY_ODDS/65536
 
 // Flags for Get(Box)MonData / Set(Box)MonData
 #define MON_DATA_PERSONALITY        0
