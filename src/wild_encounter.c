@@ -402,9 +402,9 @@ static int randInRange(int min, int max)
 
 static int getRandomPokemon() {
    int kant_min = 1;
-    int kant_max = 251;
+    int kant_max = 248;
     int hoen_min = 277;
-    int hoen_max = 411;
+    int hoen_max = 400;
     int dex_decider = randInRange(0,1);
     int min, max;
       if(dex_decider == 0) {

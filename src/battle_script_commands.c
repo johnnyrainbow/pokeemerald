@@ -3241,7 +3241,8 @@ static int getGandreXp(void)
           count++;
         }
     }
-    return 1 + count*0.06;
+    if (count==8) return 2;
+    return 0.85 + count*0.15;
 }
 static void Cmd_getexp(void)
 {
